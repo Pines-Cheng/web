@@ -1,0 +1,137 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('untitled3:server');
+var http = require('http');
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+var server = http.createServer(app);
+var port;
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
+
+function main(){
+
+  /**
+   * Get port from environment and store in Express.
+   */
+  var argv = process.argv.slice(2);
+  //console.log(argv);
+  if(!argv[0]||(argv[0]!=='-dev'&&argv[0]!=='-run')){
+    console.log('ERR: please append argument -dev or -run');
+    process.exit(0);
+  }
+
+  argv[0]=='-dev'?initDev():initRun();
+
+  port = normalizePort(process.env.PORT || '3000');
+  app.set('port', port);
+
+  /**
+   * Create HTTP server.
+   */
+  server.listen(port,function () {
+    if(port===80){//对进程进行降权处理
+      var env = process.env,
+          uid = parseInt(env['SUDO_UID'] || process.getuid(), 10),
+          gid = parseInt(env['SUDO_GID'] || process.getgid(), 10);
+      process.setgid(gid);
+      process.setuid(uid);
+    }
+  });
+  console.log('Server start in port '+ app.get('port'));
+  server.on('error', onError);
+  server.on('listening', onListening);
+  setEnv();
+};
+
+//init development config
+function initDev(){
+  process.env.ENV='dev';
+  process.env.PORT = 3000;
+}
+
+//init running config
+function initRun(){
+  process.env.ENV='run';
+  process.env.PORT = 80;
+}
+
+//set running env
+function setEnv(){
+  //var address = server.address().address;
+  //var port = server.address().port;
+  //if(address =="::"){
+  //  //address='127.0.0.1';
+  //  process.env.SERVER='';
+  //}else{
+  //  process.env.SERVER=address+':'+port;
+  //}
+}
+
+main();
+
+

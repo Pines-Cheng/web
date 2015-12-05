@@ -1,0 +1,66 @@
+
+<!-- CSS -->
+<link rel="stylesheet" text="text/css" href="http://cdn.amazeui.org/amazeui/2.4.2/css/amazeui.min.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css">
+<!--<link rel="stylesheet" href="./header.css"/>-->
+<div class="cs_header">
+    <div class="am-g">
+        <div class=" am-u-sm-3 am-fl">
+            <div class="cs_header_logo">
+                <a href="/"> <img height="40px" src="{{imageUrl}}/components/header/images/logo.png" alt="大鱼投资"/></a>
+            </div>
+        </div>
+        <div class="am-u-sm-3 am-fr">
+            <div class="am-dropdown am-fr" id="user_menu">
+                <a href="javascript:;" class="am-dropdown-toggle "> <img style="position: relative;top: 0.5rem"
+                                                                         src="{{imageUrl}}/components/header/images/user.png"
+                                                                         alt="user"></a>
+                <ul class="am-dropdown-content user_menu_drop">
+                    <li class="header_logout_flag"><a href="/user/login">登陆</a></li>
+                    <li class="header_logout_flag am-divider"></li>
+                    <li class="header_logout_flag"><a href="/user/register">注册</a></li>
+                    <!-- 分割线-->
+                    <li  class="header_login_flag am-dropdown-header am-text-center" id="header_username"></li>
+                    <li  class="header_login_flag am-divider"></li>
+                    <li class="header_login_flag"><a href="/combination/mine">我的组合</a></li>
+                    <li  class="header_login_flag am-divider"></li>
+                    <li class="header_login_flag" id="header_logout"><a href="javascript:;" >登出</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class=" am-u-sm-6 ">
+            <ul class="am-avg-sm-6 cs_nav" id="cs_nav">
+                <li><a href="/" class="header_nav_a" id="header_nav_home">首页</a></li>
+                <li><a href="javascript:;" id="header_nav_stategy" class="header_nav_a"
+                       ng-click="alertMessage('稍等，程序员正在加班加点...')">策略</a></li>
+                <li>
+                    <div class="am-dropdown" id="combination_menu">
+                        <a class=" am-dropdown-toggle header_nav_a" id="header_nav_combination"
+                           href="javascript:;">组合</a>
+                        <ul class="am-dropdown-content" style="margin-top: -2rem">
+                            <li><a href="/index.html#/combination/show">组合排名</a></li>
+                            <li class="am-divider"></li>
+                            <li><a href="/index.html#/combination/create">创建组合</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="zhihu.fxdayu.com/dayu/" class=" header_nav_a" id="header_nav_topic">圈子</a></li>
+                <li>
+                    <div class="am-dropdown" id="activity_menu">
+                        <a class=" am-dropdown-toggle header_nav_a" id="header_nav_activity" href="javascript:;">活动 </a>
+                        <ul class="am-dropdown-content" style="margin-top: -2rem">
+                            <li><a href="/index.html#/activity/show">比赛简介</a></li>
+                            <li class="am-divider"></li>
+                            <li><a href="/index.html#/activity/apply">我要报名</a></li>
+                            <li class="am-divider"></li>
+                            <li><a href="/index.html#/activity/rank">比赛排名</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/about" class="header_nav_a" id="header_nav_about">关于大鱼</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+

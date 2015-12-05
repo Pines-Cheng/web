@@ -1,0 +1,79 @@
+
+.dy_about_body {
+    width: 1080px;
+    height: 538px;
+    margin: 0 auto;
+    background: url(./images/about_dayu_body.jpg) no-repeat;
+}
+.dayu_body_wrap {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #010b14;
+}
+.dayu_logo {
+    width: 48px;
+    border-radius: 10px;
+}
+.dy_about_intro {
+    width: 340px;
+    padding-top: 140px;
+    margin-left: 220px;
+    color: white;
+}
+.dy_intro_title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.dy_intro_word {
+    font-size: 12px; line-height: 20px;
+}
+.dy_about_footer {
+    height: 300px;
+    background-color: #20BCF4;
+    margin-top: 10px;
+}
+.weixin_ercode_bg {
+    width: 160px;
+    height: 160px;
+    /* padding: 5px; */
+    background-color: white;
+}
+.weixin_ercode {
+    width: 100%;
+}
+.dy_fotter_body {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.dy_ercode_body {
+    float: left;
+    text-align: center;
+}
+.dy_contact_body {
+    float: right;
+    color: white;
+}
+.contact_info {
+    float: left; font-size: 12px; line-height: 16px;
+}
+.valid_label {
+    clear: both; font-size: 12px;
+}
+
+.footer{
+    display: none;
+}
+.main {
+    width: 100%;
+    /*width: 100%;*/
+    margin: 0px auto;
+    /*height: 1200px;*/
+    padding-bottom: 0;
+    /*background-color: rgb(237, 237, 237);*/
+}
+
+/*.header{*/
+    /*width: 960px;*/
+    /*margin: 0px auto;*/
+/*}*/

@@ -1,0 +1,279 @@
+
+.cs_header {
+    width: 960px;
+    margin: 0px auto;
+    /*background-color: white;*/
+}
+
+.cs_nav > li {
+    line-height: 8rem;
+    text-align: center;
+}
+
+.cs_nav_welcome {
+    /*width: 13rem;*/
+    line-height: 8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.header_nav_a {
+    color: grey;
+}
+
+.header_nav_a:visited {
+    /*color: grey;*/
+}
+
+.header_nav_a:link {
+    /*color: grey;*/
+}
+
+.header_nav_a:focus {
+    color: #496CEB;
+}
+
+.header_nav_a:hover {
+    color: #496CEB;
+    border-bottom: 3px solid #496CEB;
+    padding-bottom: 5px;
+}
+
+.cs_nav_selected {
+    color: #496CEB;
+    border-bottom: 3px solid #496CEB;
+    padding-bottom: 5px;
+}
+
+.cs_user {
+    z-index: 200;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #979797;
+    border-top: 0px;
+}
+
+.cs_user > li {
+    list-style-type: none;
+    display: none;
+    margin-right: -20px;
+    /*padding-right: -50px;*/
+    /*z-index: 100;*/
+    /*position: absolute;*/
+    /*right: 20px;*/
+
+    border-color: #979797;
+    /*border: 1px solid ;*/
+}
+
+.cs_user:hover > li {
+    display: block;
+}
+
+.cs_header_logo {
+    line-height: 8rem;
+}
+
+.user_menu_drop {
+    margin-top: -0.5rem;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    /*background-color: #0066BB;*/
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: relative;
+    background-color: rgb(237, 237, 237);
+}
+
+.main {
+    width: 960px;
+    /*width: 100%;*/
+    margin: 0 auto;
+    /*height: 1200px;*/
+    padding-bottom: 200px;
+    /*background-color: rgb(237, 237, 237);*/
+}
+
+footer {
+    width: 100%;
+    /*margin: 0px auto;*/
+    position: absolute;
+    bottom: 0;
+    clear: both;
+}
+
+.header {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+.main {
+    width: 100%;
+}
+
+.dy_main {
+    background-color: rgb(237, 237, 237);
+}
+
+.dy_main_bg_color {
+    color: #5bb9f8;
+}
+
+.dy_banner_box {
+    width: 22.5%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.dy_banner_box:hover {
+    background-color: #5bb9f8;
+}
+
+.dy_banner_icon {
+    margin-top: 20px;
+}
+
+.dy_banner_title {
+    margin-top: 15px;
+}
+
+.dy_banner_slogan {
+    font-size: 12px;
+}
+
+.dy_banner_des {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.dy_banner_more {
+    width: 86px;
+    height: 29px;
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    left: 50%;
+    margin-left: -43px;
+    /**这里设置为width的一半使居中**/
+
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAdCAMAAAAHF2tqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEWZmZnr6+ugoKC7u7vW1tbJycnk5OT///+tra3x8fH4+PjCwsLPz8+np6fd3d20tLQAAADo75dtAAAAAWJLR0QQlbINLAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAOhJREFUSMftlMESgyAMRBMgLCDq//9tEwEPvUl76HTYA7Po+FiSjERLS/8jZteM56CrE47yOdUBnRLBRClDZSexmSLdoDzG5sskGJaLOCfNXUdtzTxPm/VTVUVmkha9DlpCmMWGEs3kyDwQO45m93lsPZCINog2z25vGifYq1nsiapVLM6woWNL71QcLauPsQZJdm2m8pY2Yp9Oa40SnMbSzPbw7tQGP491JWa+IvpWhbukp07GNFYxNliKpYDD+8PgH0+ChdIaXljlqgJ1LOnwtZbBPeNWr4vIWCiJJLp38oX/w9LSz+kFulAG71+T7E8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTUtMTAtMjFUMTE6MzE6MzMrMDg6MDBiqZJCAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE1LTEwLTIxVDExOjMxOjMzKzA4OjAwE/Qq/gAAAABJRU5ErkJggg==);
+}
+
+.dy_banner_more:hover {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAdCAMAAAAHF2tqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEWZmZlGR0eSkpJ2d3dbXFxoaWlNTk4xMzOEhYU/QUE4OjpvcHBiY2OLi4tUVVV9fn4AAAA8lH5PAAAAAWJLR0QQlbINLAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAOhJREFUSMftlMESgyAMRBMgLCDq//9tEwEPvUl76HTYA7Po+FiSjERLS/8jZteM56CrE47yOdUBnRLBRClDZSexmSLdoDzG5sskGJaLOCfNXUdtzTxPm/VTVUVmkha9DlpCmMWGEs3kyDwQO45m93lsPZCINog2z25vGifYq1nsiapVLM6woWNL71QcLauPsQZJdm2m8pY2Yp9Oa40SnMbSzPbw7tQGP491JWa+IvpWhbukp07GNFYxNliKpYDD+8PgH0+ChdIaXljlqgJ1LOnwtZbBPeNWr4vIWCiJJLp38oX/w9LSz+kFulAG71+T7E8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTUtMTAtMjFUMTE6MzE6MzErMDg6MDD1NoNrAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE1LTEwLTIxVDExOjMxOjMxKzA4OjAwhGs71wAAAABJRU5ErkJggg==);
+}
+
+.p2-disp .content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.p2-disp .part-1 {
+    height: 600px;
+    background: url(/dist/b88b79f2c4a55cab4650f57cee69fbc0.jpg) center no-repeat;
+}
+
+.p2-disp .part-2 {
+    height: 400px;
+    background: url(/dist/052b045af1ffa6cb5489b7dce49190ea.gif) center no-repeat;
+}
+
+.p2-disp .part-3-1 {
+    height: 600px;
+    background: url(/dist/be48af9eb80684a7509f48c1aca565fc.jpg) center no-repeat;
+}
+
+.p2-disp .part-4 {
+    height: 400px;
+    background: url(/dist/052b045af1ffa6cb5489b7dce49190ea.gif) center no-repeat;
+}
+
+.p2-disp .part-5 {
+    height: 600px;
+    background: url(/dist/4806154d3a65e47eb518f2579c66b6a2.jpg) center 10% no-repeat;
+}
+
+.p2-disp .part-6 {
+    height: 400px;
+    background: url(/dist/052b045af1ffa6cb5489b7dce49190ea.gif) center no-repeat;
+}
+
+.p2-disp .part-7 {
+    height: 600px;
+    background: url(/dist/848333fde469fa54ec282614c04374d5.jpg) center 10% no-repeat;
+}
+
+.p2-disp .part-8 {
+    height: 400px;
+    background: url(/dist/052b045af1ffa6cb5489b7dce49190ea.gif) center no-repeat;
+}
+
+.p2-disp .bg-attach {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.dy_footer {
+    height: 200px;
+    background-color: #E5E5E5;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.dy_app_download {
+    height: 40px;
+    width: 960px;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    /*border-radius: 3px;*/
+}
+
+.dy_app_download a {
+    position: absolute;
+    display: block;
+}
+
+.dy_app_download img {
+    width: 30px;
+    height: 30px;
+}
+
+.dy_android {
+    right: 0px;
+}
+
+.dy_ios {
+    right: 60px;
+}
+
+/*# sourceMappingURL=home_d5cb4e5099c05ad28603.css.map*/

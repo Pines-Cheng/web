@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>head}}
+</head>
+<header>{{>header}}</header>
+<body class="container">
+<div class="am-g main" >
+    <div class="am-u-lg-4 am-u-md-12 am-u-sm-centered">
+        <img class="am-center am-img-responsive " src="{{imageUrl}}./user/register/images/logo.png" alt="logo" />
+        <!-- <blockquote style="color:#ff8888">这里是提示！</blockquote> -->
+        <my-alert></my-alert>
+        <form class="am-form">
+            <label for="username">用户名:</label>
+            <input type="text" name="username" id="username" ng-model="registerParam.username" value="" maxlength="20" placeholder="请输入用户名" required>
+            <br />
+            <label for="tel">账号:</label>
+            <input type="text" id="tel" ng-model="registerParam.tel" name="tel" value="" maxlength="20" pattern="((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)" placeholder="请输入手机号"
+                   required>
+            <br>
+            <label for="password">密码:</label>
+            <input type="password" id="password" ng-model="registerParam.password" name="password" value="" maxlength="40" placeholder="请输入密码" required>
+            <br>
+
+            <div class="am-cf">
+                <input type="submit" name="" value="确定" class="am-btn am-btn-primary  am-fl am-radius">
+                <a href="/user/login" class=" am-fr ">
+                    登录>>
+                </a>
+            </div>
+        </form>
+    </div>
+    <br/>
+</div>
+</body>
+<footer>{{>footer}}</footer>
+</html>

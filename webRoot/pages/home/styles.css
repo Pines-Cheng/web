@@ -1,0 +1,153 @@
+
+.main {
+    width: 100%;
+}
+
+.dy_main {
+    background-color: rgb(237, 237, 237);
+}
+
+.dy_main_bg_color {
+    color: #5bb9f8;
+}
+
+.dy_banner_box {
+    width: 22.5%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.dy_banner_box:hover {
+    background-color: #5bb9f8;
+}
+
+.dy_banner_icon {
+    margin-top: 20px;
+}
+
+.dy_banner_title {
+    margin-top: 15px;
+}
+
+.dy_banner_slogan {
+    font-size: 12px;
+}
+
+.dy_banner_des {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.dy_banner_more {
+    width: 86px;
+    height: 29px;
+    position: absolute;
+    bottom: 20px;
+    display: block;
+    left: 50%;
+    margin-left: -43px;
+    /**这里设置为width的一半使居中**/
+
+    background-image: url("./images/more_normal.png");
+}
+
+.dy_banner_more:hover {
+    background-image: url("./images/more_hover.png");
+}
+
+.p2-disp .content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.p2-disp .part-1 {
+    height: 600px;
+    background: url("./images/banner_bg1.jpg") center no-repeat;
+}
+
+.p2-disp .part-2 {
+    height: 400px;
+    background: url("./images/banner_bg.gif") center no-repeat;
+}
+
+.p2-disp .part-3-1 {
+    height: 600px;
+    background: url("./images/banner_bg2.jpg") center no-repeat;
+}
+
+.p2-disp .part-4 {
+    height: 400px;
+    background: url("./images/banner_bg.gif") center no-repeat;
+}
+
+.p2-disp .part-5 {
+    height: 600px;
+    background: url("./images/banner_bg3.jpg") center 10% no-repeat;
+}
+
+.p2-disp .part-6 {
+    height: 400px;
+    background: url("./images/banner_bg.gif") center no-repeat;
+}
+
+.p2-disp .part-7 {
+    height: 600px;
+    background: url("./images/banner_bg4.jpg") center 10% no-repeat;
+}
+
+.p2-disp .part-8 {
+    height: 400px;
+    background: url("./images/banner_bg.gif") center no-repeat;
+}
+
+.p2-disp .bg-attach {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.dy_footer {
+    height: 200px;
+    background-color: #E5E5E5;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.dy_app_download {
+    height: 40px;
+    width: 960px;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    /*border-radius: 3px;*/
+}
+
+.dy_app_download a {
+    position: absolute;
+    display: block;
+}
+
+.dy_app_download img {
+    width: 30px;
+    height: 30px;
+}
+
+.dy_android {
+    right: 0px;
+}
+
+.dy_ios {
+    right: 60px;
+}

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    {{>head}}
+</head>
+<body>
+<header id="header">{{>header}}</header>
+<div class="dy_main">
+    <div class="dy_app_download">
+        <a href="javascript:void(0)" id="home_android_load" title="Android" class="dy_android">
+            <img src="{{imageUrl}}./home/images/android_normal.png" class="dy_android_icon"/>
+        </a>
+        <!--<span style="right: 50px;">Android</span>-->
+        <a href="javascript:void(0)" id="home_IOS_load" title="IOS" class="dy_ios">
+            <img src="{{imageUrl}}./home/images/iphone_normal.png" class="dy_ios_icon"/>
+        </a>
+        <!--<span style="right: 50px;">Android</span>-->
+    </div>
+    <div class="am-slider am-slider-default" id="demo-slider-0">
+        <ul class="am-slides">
+            <li><img src="{{imageUrl}}./home/images/step1.jpg"/></li>
+            <li><img src="{{imageUrl}}./home/images/step2.jpg"/></li>
+            <li><img src="{{imageUrl}}./home/images/step3.jpg"/></li>
+            <li><img src="{{imageUrl}}./home/images/step4.jpg"/></li>
+        </ul>
+    </div>
+    <div style="margin-top: -100px; position: absolute; width: 100%;">
+        <div style="width: 1080px; height: 360px; margin: 0 auto;">
+            <div id="type_any1" class="dy_banner_box">
+                <img src="{{imageUrl}}./home/images/comb_normal.png" class="dy_banner_icon"/>
+                <br/>
+                <label class="dy_banner_title">组合</label>
+                <br/>
+                <label class="dy_banner_slogan">"突然发现自己差巴菲特也不远唉？"</label>
+
+                <p class="dy_banner_des">想验证自己的投资思想？想与大家交流投资思路？来构建自己的组合吧！对冲、套利、多因子、事件驱动...你的组合你做主！</p>
+                <a href="/index.html#/combination/show" class="dy_banner_more">&nbsp;</a>
+            </div>
+            <div id="type_any2" class="dy_banner_box" style="margin-left: 3%;">
+                <img src="{{imageUrl}}./home/images/news_normal.png" class="dy_banner_icon"/>
+                <br/>
+                <label class="dy_banner_title">资讯</label>
+                <br/>
+                <label class="dy_banner_slogan">"永远奋斗在第一线的金融时讯"</label>
+
+                <p class="dy_banner_des">全球财经版的“今日头条”--做最懂你的金融讯息服务。</p>
+                <a ng-click="alertMessage('该功能正在开发中，敬请期待...')" class="dy_banner_more">&nbsp;</a>
+            </div>
+            <div id="type_any3" class="dy_banner_box" style="margin-left: 3%;">
+                <img src="{{imageUrl}}./home/images/type_select_normal.png" class="dy_banner_icon"/>
+                <br/>
+                <label class="dy_banner_title">品种</label>
+                <br/>
+                <label class="dy_banner_slogan">"都什么年代了，能玩的有挑战性的不？"</label>
+
+                <p class="dy_banner_des">国内率先主打外汇和期权的移动投资社区。</p>
+                <a href="javascript:void(0)" ng-click="alertMessage('稍等，程序员正在加班加点...')" class="dy_banner_more">
+                    &nbsp;</a>
+            </div>
+            <div id="type_any4" class="dy_banner_box" style="margin-left: 3%;">
+                <img src="{{imageUrl}}./home/images/data_select_normal.png" class="dy_banner_icon"/>
+                <br/>
+                <label class="dy_banner_title">量化</label>
+                <br/>
+                <label class="dy_banner_slogan">"学号数理化，走遍天下都不怕！"</label>
+
+                <p class="dy_banner_des">高效的工具+准确的数据助你轻松研究量化交易、生成专属交易信号。什么？不懂编程？没关系，大鱼早就知道了一切...</p>
+                <a href="javascript:void(0)" ng-click="alertMessage('该功能正在内测中，暂未开放。')" class="dy_banner_more">&nbsp;</a>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #F7F7F7; height: 280px; margin-top: -20px;">
+    </div>
+
+    <div class="p2-disp">
+        <div class="part-1 bg-attach"></div>
+        <div class="part-2">
+            <div class="content pr">
+                <img src="{{imageUrl}}./home/images/phone_comb_img.png" class="pa" style="top: 200px; right: 0%;"/>
+
+                <div class="pa" style="width: 40%; top: 100px;">
+                    <span style="font-size: 50px; display: block;">组合</span>
+                    <b style="font-size: 20px;">"突然发现自己差巴菲特也不远唉？"</b>
+
+                    <p style="font-size: 18px;">想验证自己的投资思想？想与大家交流投资思路？来构建自己的组合吧！对冲、套利、多因子、事件驱动...你的组合你做主！</p>
+                </div>
+            </div>
+        </div>
+        <div class="part-3"></div>
+        <div class="part-3-1 bg-attach">
+        </div>
+        <div class="part-4">
+            <div class="content pr">
+                <img src="{{imageUrl}}./home/images/phone_news_img.png" class="pa" style="width: 300px; top: -200px; "/>
+
+                <div class="pa" style="width: 40%; left: 60%; top: 100px;">
+                    <span style="font-size: 50px; display: block;">资讯</span>
+                    <b style="font-size: 20px;">"永远奋斗在第一线的金融时讯"</b>
+
+                    <p style="font-size: 18px;">全球财经版的“今日头条”————做最懂你的金融讯息服务。</p>
+                </div>
+            </div>
+        </div>
+        <div class="part-5 bg-attach">
+
+        </div>
+        <div class="part-6">
+            <div class="content pr">
+                <img src="{{imageUrl}}./home/images/phone_type_img.png" class="pa"
+                     style="width: 180px; top: -200px; right: 0px;"/>
+
+                <div class="pr" style="width: 40%; top: 100px">
+                    <span style="font-size: 50px; display: block;">品种</span>
+                    <b style="font-size: 20px;">"都什么年代了，能玩的有挑战性的不？"</b>
+
+                    <p style="font-size: 18px;">国内率先主打外汇和期权的移动投资社区。</p>
+                </div>
+            </div>
+        </div>
+        <div class="part-7 bg-attach">
+        </div>
+        <div class="part-8">
+            <div class="content pr">
+                <img src="{{imageUrl}}./home/images/phone_model_img.png" class="pa" style="width: 460px; top: -140px; "/>
+
+                <div class="pr" style="width: 40%; left: 60%; top: 100px;">
+                    <span style="font-size: 50px; display: block;">量化</span>
+                    <b style="font-size: 20px;">"学好数理化，走遍天下都不怕！"</b>
+
+                    <p>高效的工具+准确的数据助你轻松研究量化交易、生成专属交易信号。什么？不懂编程？没关系，大鱼早就知道了一切...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer" id="footer">{{>footer}}</div>
+</body>
+</html>

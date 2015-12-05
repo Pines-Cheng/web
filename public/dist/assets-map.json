@@ -1,0 +1,21 @@
+{
+  "about": {
+    "js": "/dist/about_b4565db5f705a9f870f3.bundle.js",
+    "css": "/dist/about_0144d8e38bf5ced2853e.css"
+  },
+  "error": {
+    "js": "/dist/error_78234147c9e2f5faa849.bundle.js"
+  },
+  "home": {
+    "js": "/dist/home_3a56b506a28e9bac7c95.bundle.js",
+    "css": "/dist/home_0e48302a87dc7dcbc941.css"
+  },
+  "user_login": {
+    "js": "/dist/user_login_06bf5b7edb8637bebe75.bundle.js",
+    "css": "/dist/user_login_6bf9e5a30e86c0eb3269.css"
+  },
+  "user_register": {
+    "js": "/dist/user_register_2783a9d22756761e968e.bundle.js",
+    "css": "/dist/user_register_6bf9e5a30e86c0eb3269.css"
+  }
+}

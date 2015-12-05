@@ -1,0 +1,167 @@
+
+.dy_about_body {
+    width: 1080px;
+    height: 538px;
+    margin: 0 auto;
+    background: url(/dist/596f7f92fe718207a98fab428173d4d8.jpg) no-repeat;
+}
+.dayu_body_wrap {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #010b14;
+}
+.dayu_logo {
+    width: 48px;
+    border-radius: 10px;
+}
+.dy_about_intro {
+    width: 340px;
+    padding-top: 140px;
+    margin-left: 220px;
+    color: white;
+}
+.dy_intro_title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.dy_intro_word {
+    font-size: 12px; line-height: 20px;
+}
+.dy_about_footer {
+    height: 300px;
+    background-color: #20BCF4;
+    margin-top: 10px;
+}
+.weixin_ercode_bg {
+    width: 160px;
+    height: 160px;
+    /* padding: 5px; */
+    background-color: white;
+}
+.weixin_ercode {
+    width: 100%;
+}
+.dy_fotter_body {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.dy_ercode_body {
+    float: left;
+    text-align: center;
+}
+.dy_contact_body {
+    float: right;
+    color: white;
+}
+.contact_info {
+    float: left; font-size: 12px; line-height: 16px;
+}
+.valid_label {
+    clear: both; font-size: 12px;
+}
+
+.footer{
+    display: none;
+}
+.main {
+    width: 100%;
+    /*width: 100%;*/
+    margin: 0px auto;
+    /*height: 1200px;*/
+    padding-bottom: 0;
+    /*background-color: rgb(237, 237, 237);*/
+}
+
+/*.header{*/
+    /*width: 960px;*/
+    /*margin: 0px auto;*/
+/*}*/
+
+.cs_header {
+    width: 960px;
+    margin: 0px auto;
+    /*background-color: white;*/
+}
+
+.cs_nav > li {
+    line-height: 8rem;
+    text-align: center;
+}
+
+.cs_nav_welcome {
+    /*width: 13rem;*/
+    line-height: 8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.header_nav_a {
+    color: grey;
+}
+
+.header_nav_a:visited {
+    /*color: grey;*/
+}
+
+.header_nav_a:link {
+    /*color: grey;*/
+}
+
+.header_nav_a:focus {
+    color: #496CEB;
+}
+
+.header_nav_a:hover {
+    color: #496CEB;
+    border-bottom: 3px solid #496CEB;
+    padding-bottom: 5px;
+}
+
+.cs_nav_selected {
+    color: #496CEB;
+    border-bottom: 3px solid #496CEB;
+    padding-bottom: 5px;
+}
+
+.cs_user {
+    z-index: 200;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #979797;
+    border-top: 0px;
+}
+
+.cs_user > li {
+    list-style-type: none;
+    display: none;
+    margin-right: -20px;
+    /*padding-right: -50px;*/
+    /*z-index: 100;*/
+    /*position: absolute;*/
+    /*right: 20px;*/
+
+    border-color: #979797;
+    /*border: 1px solid ;*/
+}
+
+.cs_user:hover > li {
+    display: block;
+}
+
+.cs_header_logo {
+    line-height: 8rem;
+}
+
+.user_menu_drop {
+    margin-top: -0.5rem;
+}
+
+
+
+/*# sourceMappingURL=about_ab8f0fa9757a8e45717b.css.map*/
